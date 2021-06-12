@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="top">
+        <h1>Weather App</h1>
+        <div class="details">
+          <div class="search">
+            <p class="showtext"></p>
+            <input
+              id="data"
+              type="text"
+              maxlength="15"
+              placeholder="type city name..."
+            />
+            <button id="submit">Show</button>
+          </div>
+          <div class="showWeather">
+            <img
+              src="images/cloud.png"
+              alt="picture ilustrates type of weather at searched place"
+            />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap"
+              rel="stylesheet"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="titles">
+          <p class="weather">Weather:</p>
+          <p class="temperature">Temperature:</p>
+          <p class="humidity">Humidity:</p>
+        </div>
+        <div class="scores">
+          <p class="dataWeather"></p>
+          <p class="dataTemperature"></p>
+          <p class="dataHumidity"></p>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
+    <script src="project.js"></script>
+  </body>
+</html>
