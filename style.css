@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  height: 90vh;
+  background-image: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(76, 9, 121, 1) 26%,
+    rgba(0, 138, 255, 1) 78%
+  );
+}
+main.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 8px);
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 2px white solid;
+  border-radius: 20px;
+  box-shadow: 0 0 8px 2px white;
+}
+@media screen and (min-width: 600px) {
+  main.container {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 900px) {
+  main.container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main.container {
+    width: 50%;
+  }
+}
+div.top {
+  text-align: center;
+  flex-basis: 63%;
+}
+div.bottom {
+  flex-grow: 1;
+}
+
+.top h1 {
+  margin-top: 5px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-shadow: 0 0 8px black;
+}
+
+div.details {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 70%;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+@media screen and (min-width: 900px) {
+  div.details {
+    flex-direction: row;
+  }
+}
+div.search button {
+  margin-left: 8px;
+  letter-spacing: 1.5px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  text-shadow: 0 0 4px aqua;
+  box-shadow: 0 0 1px 1px red;
+  padding: 7px 10px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.search button:hover {
+  color: black;
+  border-radius: 12px;
+}
+.search input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding-bottom: 5px;
+  font-size: 12px;
+  border-bottom: 1px solid red;
+
+  color: white;
+  text-shadow: 0 0 5px black;
+  letter-spacing: 1.8px;
+}
+.search input:focus {
+  border-color: blue;
+}
+p.showtext {
+  transform: translateX(-15%);
+  font-family: "Oleo Script", cursive;
+  margin-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 30px;
+  animation: color 4s linear infinite;
+}
+div.titles {
+  letter-spacing: 1.2px;
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0 0 4px red;
+  justify-content: space-around;
+  padding: 5px 0;
+  box-shadow: 0 0 2px 2px white;
+}
+div.scores {
+  display: flex;
+  font-size: 20px;
+  height: 60%;
+  justify-content: space-around;
+  align-items: center;
+  animation: colorscores 4s linear infinite;
+}
+p.dataWeather {
+  margin-left: -14px;
+}
+p.dataTemperature {
+  margin-left: 20px;
+}
+p.dataHumidity {
+  margin-left: 25px;
+}
+
+div.showWeather img {
+  width: 150px;
+}
+@keyframes color {
+  0% {
+    text-shadow: 0 0 0px aqua;
+  }
+  20% {
+    text-shadow: 0 0 2px aqua;
+  }
+  40% {
+    text-shadow: 0 0 4px aqua;
+  }
+  60% {
+    text-shadow: 0 0 4px aqua;
+  }
+  80% {
+    text-shadow: 0 0 2px aqua;
+  }
+  100% {
+    text-shadow: 0 0 0px blue;
+  }
+}
+@keyframes colorscores {
+  0% {
+    text-shadow: 0 0 0px yellow;
+  }
+  20% {
+    text-shadow: 0 0 3px orange;
+  }
+  40% {
+    text-shadow: 0 0 6px green;
+  }
+  60% {
+    text-shadow: 0 0 6px aqua;
+  }
+  80% {
+    text-shadow: 0 0 3px red;
+  }
+  100% {
+    text-shadow: 0 0 0px yellow;
+  }
+}
