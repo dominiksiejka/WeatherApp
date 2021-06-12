@@ -4,7 +4,7 @@
 
 [**click live demo of the project**](https://dominiksiejka.github.io/BillSplitterApp)
 
-![WeatherApp preview](./assets/billsplitter.jpg)
+![WeatherApp preview](./assets/weather.jpg)
 
 ## Table of Contents
 
